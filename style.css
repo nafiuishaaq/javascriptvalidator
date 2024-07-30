@@ -39,7 +39,7 @@ header {
     .nav-lists {
       ul {
         display: flex;
-        gap: 40px;
+        gap: 20px;
         padding: 10px;
         color: #fff;
         font-weight: 600;
@@ -48,8 +48,11 @@ header {
         list-style: none;
         cursor: pointer;
         position: relative;
+        padding: 10px;
         &:hover {
           color: rgb(252, 114, 3);
+          background-color: var(--white);
+          padding: 10px;
         }
 
         .services-child a {
@@ -232,11 +235,18 @@ main {
         display: flex;
         flex-direction: column;
         position: absolute;
+        text-align: center;
         left: 0;
-        top: 50px;
+        top: 0;
+        width: 60%;
+        height: 100vh;
         background: black;
-        opacity: 0.8;
+        opacity: 0.9;
         z-index: 10;
+      }
+
+      li {
+        margin-top: 20px;
       }
     }
 
