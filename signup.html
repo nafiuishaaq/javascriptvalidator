@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up | PraRoz</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="signup.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <section>
+        <!-- NAVBAR -->
+        <nav id="navbar">
+          <!-- Logo -->
+          <h1 class="logo">Nafiu Ishaq</h1>
+
+          <!-- Menu -->
+          <ul class="nav-items">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li>
+              <a href="#">SERVICE</a>
+              <!-- submenu -->
+              <ul class="submenu">
+                <li><a href="#">HTML CLASS</a></li>
+                <li><a href="#">CSS CLASS</a></li>
+                <li><a href="#">JAVASCRIPT CLASS</a></li>
+              </ul>
+            </li>
+            <li><a href="#">DESIGN</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+
+          <!-- Search Icon -->
+          <div class="search">
+            <input
+              class="srch"
+              type="search"
+              name=""
+              placeholder="Type To text"
+            />
+            <a href="#"> <button class="btn">Search</button></a>
+          </div>
+
+          <!-- <div class="cancel-icon">
+          <img src="./menu-close.svg" alt="" width="25px" height="auto" />
+        </div> -->
+
+          <div class="menu-icon">
+            <img src="./menu-open.svg" alt="" width="30px" height="auto" />
+          </div>
+        </nav>
+      </section>
+
+      <!-- MOBILE NAVBAR -->
+      <nav class="mobileNav" id="mobileNav">
+        <!-- Logo -->
+        <div class="logo_close">
+          <h1 class="logo">Yusuf Falade</h1>
+
+          <div class="cancel-icon">
+            <img src="./menu-close.svg" alt="" width="25px" height="auto" />
+          </div>
+        </div>
+
+        <!-- Menu -->
+        <ul class="nav-items">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li>
+            <span id="service">
+              <a href="#">SERVICE</a>
+
+              <img
+                src="./downarrow.svg"
+                alt="downarrow"
+                width="15px"
+                height="auto"
+                class="downarrow"
+              />
+            </span>
+            <!-- submenu -->
+            <ul class="submenuu">
+              <li><a href="#">HTML CLASS</a></li>
+              <li><a href="#">CSS CLASS</a></li>
+              <li><a href="#">JAVASCRIPT CLASS</a></li>
+            </ul>
+          </li>
+          <li><a href="#">DESIGN</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+
+        <!-- Search Icon -->
+        <div class="search">
+          <input
+            class="srch"
+            type="search"
+            name=""
+            placeholder="Type To text"
+          />
+          <a href="#"> <button class="btn">Search</button></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- FORM SECTION -->
+      <form class="form">
+        <!-- Form heading -->
+        <h2>Sign Up</h2>
+
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Enter Username Here"
+        />
+        <span id="username-error" class="error-message"></span>
+
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter Email Here"
+        />
+        <span id="email-error" class="error-message"></span>
+
+        <input
+          type="password"
+          name="password1"
+          id="password1"
+          placeholder="Enter Password Here"
+        />
+        <span id="password1-error" class="error-message"></span>
+
+        <input
+          type="password"
+          name="password2"
+          id="password2"
+          placeholder="Retype Password Here"
+        />
+        <span id="password2-error" class="error-message"></span>
+
+        <button class="btnn" type="button" onclick="validateForm()">
+          Sign Up
+        </button>
+
+        <p class="link">
+          Already have an account?<br />
+          <a href="./index.html">Login here</a>
+        </p>
+
+        <br />
+
+        <div class="icons">
+          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+        </div>
+      </form>
+    </main>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  </body>
+</html>

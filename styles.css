@@ -1,0 +1,530 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.5) 50%
+    ),
+    url("bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  height: 100%;
+  /* padding-inline: 60px; */
+}
+
+header section {
+  padding-inline: 60px;
+  /* width: 100vw; */
+}
+
+nav {
+  padding-top: 15px;
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #ff7200;
+  font-size: 30px;
+}
+
+.nav-items {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-items li {
+  list-style: none;
+  font-size: 14px;
+  position: relative;
+}
+
+.nav-items li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+  padding: 10px 15px;
+  display: block;
+}
+
+.nav-items li a:hover {
+  color: #ff7200;
+}
+
+.search {
+  display: none;
+}
+
+.srch {
+  font-family: "Times New Roman";
+  width: 200px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #ff7200;
+  /* margin-top: 13px; */
+  color: #fff;
+  border-right: none;
+  font-size: 16px;
+  /* float: left; */
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.btn {
+  width: 100px;
+  height: 40px;
+  background: #ff7200;
+  border: 2px solid #ff7200;
+  /* margin-top: 13px; */
+  color: #fff;
+  font-size: 15px;
+  border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #000;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.srch:focus {
+  outline: none;
+}
+
+/* DROPDOWN MENU CSS */
+
+.submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  background-color: #eee;
+  color: #ff7200;
+  z-index: 100;
+}
+
+.nav-items li:hover .submenu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  color: #ff7200;
+}
+
+.submenu li {
+  margin: 0;
+  color: #ff7200;
+}
+
+.submenu li a {
+  padding: 10px 15px;
+  /* background-color: #f8f8f8; */
+  /* border: 1px solid #ddd; */
+  color: #ff7200;
+}
+
+/* MAIN BODY CONTENT */
+
+main {
+  padding-inline: 60px;
+  /* width: 100%; */
+  /* width: 100vw; */
+  /* height: 100%; */
+  margin: auto;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+main .left-content {
+  width: 100%;
+}
+
+main .par {
+  /* padding-left: 20px; */
+  padding-bottom: 25px;
+  font-family: Arial;
+  letter-spacing: 1.1px;
+  line-height: 20px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+main h1 {
+  font-family: "Times New Roman";
+  font-size: 30px;
+  /* padding-left: 20px; */
+  margin-top: 6%;
+  letter-spacing: 2px;
+}
+
+main h1 span {
+  font-size: 30px;
+}
+
+main .cn {
+  width: 140px;
+  height: 40px;
+  background: #ff7200;
+  border: none;
+  /* margin-bottom: 10px; */
+  /* margin-left: 20px; */
+  font-size: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+main .cn a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s ease;
+}
+
+.cn:hover {
+  background-color: #fff;
+}
+
+main span {
+  color: #ff7200;
+  font-size: 65px;
+}
+
+/* FORM CSS */
+form {
+  width: 250px;
+  height: 100%px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 0.8) 50%
+  );
+  transform: translate(0%, -5%);
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.form h2 {
+  /* width: 220px; */
+  font-family: sans-serif;
+  text-align: center;
+  color: #ff7200;
+  font-size: 16px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 2px;
+  padding: 8px;
+}
+
+.form input {
+  width: 240px;
+  height: 35px;
+  background: transparent;
+  border: none;
+  border: 1px solid #ff7200;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 15px;
+  font-family: sans-serif;
+  padding: 5px;
+}
+
+.form input:focus {
+  outline: none;
+}
+
+::placeholder {
+  /* color: #fff; */
+  font-family: Arial;
+  font-size: 14px;
+}
+
+.btnn {
+  width: 240px;
+  height: 40px;
+  background: #ff7200;
+  border: none;
+  margin-top: 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.4s ease;
+}
+
+.btnn:hover {
+  background: #fff;
+  color: #ff7200;
+}
+.btnn a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+.form .link {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  padding-top: 20px;
+  text-align: center;
+}
+.form .link a {
+  text-decoration: none;
+  color: #ff7200;
+}
+.liw {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.icons a {
+  text-decoration: none;
+  color: #fff;
+}
+.icons ion-icon {
+  color: #fff;
+  font-size: 20px;
+  padding-left: 14px;
+  padding-top: 5px;
+  transition: 0.3s ease;
+}
+.icons ion-icon:hover {
+  color: #ff7200;
+}
+
+/* RESPONSIVE MENU ICONS */
+.menu-icon {
+  /* display: block; */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 640px) {
+  .logo {
+    font-size: 35px;
+  }
+
+  main h1 {
+    font-size: 35px;
+  }
+
+  main h1 span {
+    font-size: 35px;
+  }
+
+  main .par {
+    line-height: 23px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    height: 100vh;
+  }
+
+  main {
+    flex-direction: row;
+    gap: 20px;
+    align-items: start;
+    margin-bottom: 0;
+  }
+
+  main h1 {
+    font-size: 40px;
+  }
+
+  main h1 span {
+    font-size: 40px;
+  }
+
+  main .par {
+    letter-spacing: 1.1px;
+    line-height: 26px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu-icon,
+  .cancel-icon {
+    display: none;
+  }
+
+  .nav-items,
+  .search {
+    display: flex;
+  }
+
+  main h1 {
+    font-size: 50px;
+  }
+
+  main h1 span {
+    font-size: 50px;
+  }
+
+  main .par {
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    font-size: 16px;
+  }
+}
+
+/* MOBILE NAV MENU */
+
+.mobileNav {
+  width: 100vw;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.mobileNav .logo_close {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  .mobileNav {
+    display: none;
+  }
+}
+
+.mobileNav .logo {
+  color: #ff7200;
+  font-size: 30px;
+}
+
+.mobileNav .nav-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.mobileNav .nav-items li {
+  list-style: none;
+  font-size: 14px;
+  position: relative;
+}
+
+.mobileNav .nav-items li a {
+  text-decoration: none;
+  color: #202020;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+  padding: 10px 15px;
+  display: block;
+}
+
+.mobileNav .nav-items li a:hover {
+  color: #ff7200;
+}
+
+.mobileNav ul li span {
+  display: flex;
+}
+
+.mobileNav .search {
+  display: flex;
+  margin-top: 10px;
+}
+
+.mobileNav .srch {
+  font-family: "Times New Roman";
+  width: 150px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #ff7200;
+  color: #202020;
+  border-right: none;
+  font-size: 16px;
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.mobileNav ::placeholder {
+  color: #202020;
+}
+
+.mobileNav .btn {
+  width: 100px;
+  height: 40px;
+  background: #ff7200;
+  border: 2px solid #ff7200;
+  color: #202020;
+  font-size: 15px;
+  border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.mobileNav .btn:hover {
+  color: #000;
+}
+
+.mobileNav .btn:focus {
+  outline: none;
+}
+
+.mobileNav .srch:focus {
+  outline: none;
+}
+
+.mobileNav .cancel-icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* VALIDATION STYLES */
+
+.error-message {
+  color: red;
+  font-size: 10px;
+}
