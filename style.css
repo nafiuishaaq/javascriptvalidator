@@ -237,7 +237,7 @@ main {
         position: absolute;
         text-align: center;
         left: 0;
-        top: 0;
+        top: 60px;
         width: 60%;
         height: 100vh;
         background: black;
@@ -271,6 +271,7 @@ main {
     .hamburger {
       display: block;
       color: #fff;
+      z-index: 20;
     }
   }
   main {
